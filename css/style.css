@@ -92,7 +92,7 @@ main .container .left .items .item {
 main .container .left .items .item img {
     width: 100%;
     display: block;
-    animation: rotate 30s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 main .container .right {
@@ -117,13 +117,26 @@ main .container .right div img {
 
 /* Animations */
 @keyframes rotate {
-    from {
-      transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg);
     }
-    to {
-      transform: rotate(360deg);
+
+    25% {
+        transform: rotate(90deg);
     }
-  }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 
 /* Responsive Design */
